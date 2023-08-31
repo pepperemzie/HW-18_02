@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emily-Jane | UI/UX Designer</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/balloon.webp" type="image/x-icon">
+  <!-- CSS -->
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <!-- Splitting -->
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+ 
+  <!--===== Enhancing SEO for better page ranking in browsers===== -->
+  <meta name="language" content="EN">
+  <!-- description -->
+  <meta name="description"
+    content="I'm Emily-Jane, a UI/UX designer based in Minneapolis. I design web applications and digital products for various brands." />
+  <!--  keywords -->
+  <meta name="keywords"
+    content="UI design, UX design, web applications, digital products, UI/UX designer, Minneapolis, portfolio , Emma Carlson , Emily Jane" />
+  <!--  author meta -->
+  <meta name="author" content="Emily Jane" />
+  <!-- Additional SEO meta tags -->
+  <meta property="og:title" content="Emily-Jane | UI/UX Designer">
+  <meta property="og:description"
+    content="I'm Emily-Jane, a UI/UX designer based in Minneapolis. I design web applications and digital products for various brands.">
+  <meta property="og:image" content="img/Emma Carlson.jpeg">
+  <meta property="og:url" content="https://www.Emily-Jane.com">
+
+</head>
+
+
+
+
+<body>
+
+
+  <!-- Loading screens animation -->
+  <div class="loading__screens">
+    <div class="loading_screen sc-1">
+      <h3 data-splitting>Hey there, it's me, Emma! </h3>
+    </div>
+    <div class="loading_screen sc-2">
+      <h3 data-splitting> UI/UX Designer at Your Service</h3>
+    </div>
+    <div class="loading_screen sc-3">
+      <h3 data-splitting>Ready to Explore More?</h3>
+    </div>
+    <div class="loading_screen sc-4">
+    </div>
+  </div>
+
+
+  <!-- Start Header -->
+  <header id="header" class="site_header">
+    <div class="main_container">
+      <!-- Logo -->
+      <a title="Emma Carlson" href="index.html">
+        <img class="logo" src="img/balloon.webp" alt="Emily Jane">
+      </a>
+      <!-- Header Nav  -->
+      <nav class="header_nav">
+        <!-- Responsive  (Close Menu Icon) -->
+        <div onclick="closeMenu()" aria-hidden="true" title="Close Menu " class="close_menu is-hidden ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <path
+              d="M12.5 9.55371L25 22.0537L37.5 9.55371L40.4463 12.5L27.9463 25L40.4463 37.5L37.5 40.4463L25 27.9463L12.5 40.4463L9.55371 37.5L22.0537 25L9.55371 12.5L12.5 9.55371Z"
+              fill="black" />
+          </svg>
+        </div>
+
+        <ul class="nav_list" role="list">
+          <li><a onclick="closeMenu()" class="nav_link" href="#about" aria-label="Learn more about me">About</a></li>
+          <li><a onclick="closeMenu()" class="nav_link" href="#skills" aria-label="Discover my skills">Skills</a></li>
+          <li><a onclick="closeMenu()" class="nav_link" href="#work" aria-label="Explore my work">Work</a></li>
+          <li><a onclick="closeMenu()" class="nav_link" href="#contact" aria-label="Contact me">Contact Me</a></li>
+        </ul>
+
+      </nav>
+
+      <!-- Responsive  (Open Menu Icon) -->
+      <div onclick="openMenu()" title="Open Menu " aria-hidden="true" class="open_menu is-hidden ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+          <path d="M3.75 9.375H41.25V13.125H3.75V9.375Z" fill="black" />
+          <path d="M3.75 16.875H41.25V20.625H3.75V16.875Z" fill="black" />
+          <path d="M3.75 24.375H41.25V28.125H3.75V24.375Z" fill="black" />
+          <path d="M3.75 31.875H41.25V35.625H3.75V31.875Z" fill="black" />
+        </svg>
+      </div>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <!-- Start About (Section) -->
+  <section id="about" class="about_section sec_padding" data-scrollable data-scroll="about">
+    <div class="main_container">
+      <div class="about_box">
+        <div class="about_img_box">
+          <img src="img/Emma Carlson.jpeg" class="about_img" alt="Emma Carlson">
+          <div class="img_overlay_animation"></div>
+        </div>
+        <div class="about_desc">
+          <p class="sec_p" data-p-animation="true">
+            Hi, I’m <b class="important_word">Emily-Jane</b>, a <b class="important_word">UI</b> <b class="important_word"> UX</b> designer
+            based in <b class="important_word">Minneapolis</b>. I design <b class="important_word">web applications</b> and <b
+              class="important_word">digital products</b> to help with different <b class="important_word">brands</b>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About (Section) -->
+
+  <!--  My UX Skills section coded using CSS flex -->
+  <section id="skills" class="skills_section mySkills lg_sec_padding" data-scrollable data-scroll="skills">
+    <div class="main_container">
+      <!-- Note: Using <h2> for  section heading, even though there was an <h1> on the document.
+          This ensures proper semantic hierarchy and follows best practices, as <h1> should be unique
+          and reserved for the main page title: -->
+      <!-- 
+          ↓↓
+          -->
+      <h2 data-heading-animation class="sec_heading">My Skills</h2>
+      <div class="flexContainer">
+        <!-- 1 -->
+        <div class="flex_child">
+          <img src="https://cdn-icons-png.flaticon.com/512/1306/1306458.png" alt="User Research">
+          <div>
+            <h4>User Research</h4>
+            <p>
+              Unveil insights through comprehensive user research, guiding design decisions and delivering user-centric
+              solutions.
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="flex_child">
+          <img src=" https://cdn-icons-png.flaticon.com/512/3826/3826539.png" alt="User Interface Design">
+          <div>
+            <h4>User Interface Design</h4>
+            <p>
+              Craft intuitive interfaces that harmonize aesthetics and usability, enhancing user experiences through
+              meaningful design.
+            </p>
+
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="flex_child">
+          <img src="https://cdn-icons-png.flaticon.com/512/1508/1508765.png" alt="Web Development">
+          <div>
+            <h4>Web Development </h4>
+            <p>
+              Transforming ideas into dynamic web solutions, harnessing coding expertise to build interactive
+              experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Skills (Section) -->
+
+
+  <!-- Start Work (Section) -->
+  <section id="work" class="skills_section myWork lg_sec_padding" data-scrollable data-scroll="work">
+    <div class="main_container">
+
+      <h2 data-heading-animation class="sec_heading">My Work</h2>
+      <div class="workGrid">
+        <!-- 1 -->
+        <div class="project_item">
+          <!-- Div 1 (Img) -->
+          <div title="" class="project_img_box">
+            <img class="project_img"
+              src="img/Case Study_CodeSavvy.webp"
+              alt="Emily Jane Project">
+          </div>
+          <!-- Div 2 (Content) -->
+          <div class="project_content">
+            <h4 data-p-animation="true" class="project_name">Code Savvy: Navigating UI/UX on a Learning Platform for Aspiring Coders
+            </h4>
+            <p class="project_desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum dolorum quos ex, esse
+              dolores aut?
+            </p>
+            <button type="button" class="primary__btn">View Project</button>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="project_item">
+          <!-- Div 1 (Img) -->
+          <div title="" class="project_img_box">
+            <img class="project_img"
+              src="img/project 2 mock up.png"
+              alt="Emily Jane Project">
+          </div>
+          <!-- Div 2 (Content) -->
+          <div class="project_content">
+            <h4 data-p-animation="true" class="project_name">Crafting an Immersive Mobile App Experience</h4>
+            <p class="project_desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum dolorum quos ex, esse
+              dolores aut?
+            </p>
+            <button type="button" class="primary__btn">View Project</button>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="project_item">
+          <!-- Div 1 (Img) -->
+          <div title="" class="project_img_box">
+            <img class="project_img"
+              src="https://cdn.dribbble.com/userupload/2849465/file/original-0133a8cb8d276ab161e9400bf2809e69.png?resize=1024x768"
+              alt="Emily Jane Project">
+          </div>
+          <!-- Div 2 (Content) -->
+          <div class="project_content">
+            <h4 data-p-animation="true" class="project_name">Elevating Brand Identity: Modern UI/UX for Corporate
+              Website</h4>
+            <p class="project_desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum dolorum quos ex, esse
+              dolores aut?
+            </p>
+            <button type="button" class="primary__btn">View Project</button>
+          </div>
+        </div>
+      </div>
+      <!-- More projects -->
+      <h3 class="more_projects">View All Projects</h3>
+    </div>
+  </section>
+  <!-- End Work (Section) -->
+
+
+  <!-- Start Contact (Section) -->
+  <section id="contact" class="contact_section sec_padding " data-scrollable data-scroll="contact">
+    <div class="main_container">
+      <div class="contact_container">
+        <h2 data-heading-animation class="sec_heading">Contact Me</h2>
+        <!-- Form -->
+        <form action="" method="" class="contact_form">
+          <div class="inp_field">
+            <input autocomplete="name" placeholder="Name" required type="text" name="Name" />
+          </div>
+          <div class="inp_field">
+            <input autocomplete="email" placeholder="Email" required type="email" name="Email" />
+          </div>
+          <div class="inp_field">
+            <input autocomplete="tel" placeholder="Phone" required type="tel" name="Phone" />
+          </div>
+          <div class="inp_field">
+            <input placeholder="Message" type="text" name="Message" />
+          </div>
+
+          <!-- Submit form -->
+          <button type="submit">Submit</button>
+
+        </form>
+      </div>
+    </div>
+
+    <!-- Social links (bottom position) -->
+    <div class="social_links">
+      <!-- Instagram -->
+      <a title="Follow me on Instagram." aria-label="Follow me on Instagram." href="#" target="_blank"
+        class="social_item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M40 10C31.852 10 30.832 10.034 27.632 10.18C24.438 10.326 22.256 10.834 20.348 11.576C18.348 12.328 16.534 13.508 15.034 15.036C13.5084 16.5343 12.3277 18.347 11.574 20.348C10.836 22.256 10.326 24.44 10.18 27.634C10.036 30.832 10 31.85 10 40C10 48.15 10.034 49.168 10.18 52.368C10.326 55.562 10.834 57.744 11.576 59.652C12.328 61.652 13.508 63.466 15.036 64.966C16.5343 66.4915 18.347 67.6722 20.348 68.426C22.256 69.166 24.438 69.674 27.632 69.82C30.832 69.966 31.852 70 40 70C48.148 70 49.168 69.966 52.368 69.82C55.562 69.674 57.744 69.166 59.652 68.424C61.652 67.672 63.466 66.492 64.966 64.964C66.4916 63.4657 67.6723 61.653 68.426 59.652C69.166 57.744 69.674 55.562 69.82 52.368C69.966 49.168 70 48.148 70 40C70 31.852 69.966 30.832 69.82 27.632C69.674 24.438 69.166 22.256 68.424 20.348C67.6708 18.3461 66.49 16.5326 64.964 15.034C63.4657 13.5084 61.653 12.3277 59.652 11.574C57.744 10.836 55.56 10.326 52.366 10.18C49.168 10.036 48.15 10 40 10ZM40 15.406C48.01 15.406 48.96 15.436 52.124 15.58C55.048 15.714 56.636 16.2 57.694 16.614C59.094 17.156 60.094 17.808 61.144 18.856C62.194 19.906 62.844 20.906 63.386 22.306C63.798 23.364 64.286 24.952 64.42 27.876C64.564 31.04 64.594 31.99 64.594 40C64.594 48.01 64.564 48.96 64.42 52.124C64.286 55.048 63.8 56.636 63.386 57.694C62.9059 58.9971 62.1398 60.176 61.144 61.144C60.1762 62.14 58.9972 62.9061 57.694 63.386C56.636 63.798 55.048 64.286 52.124 64.42C48.96 64.564 48.012 64.594 40 64.594C31.988 64.594 31.04 64.564 27.876 64.42C24.952 64.286 23.364 63.8 22.306 63.386C21.0029 62.9059 19.824 62.1398 18.856 61.144C17.8604 60.1759 17.0943 58.997 16.614 57.694C16.202 56.636 15.714 55.048 15.58 52.124C15.436 48.96 15.406 48.01 15.406 40C15.406 31.99 15.436 31.04 15.58 27.876C15.714 24.952 16.2 23.364 16.614 22.306C17.156 20.906 17.808 19.906 18.856 18.856C19.8239 17.8601 21.0028 17.094 22.306 16.614C23.364 16.202 24.952 15.714 27.876 15.58C31.04 15.436 31.99 15.406 40 15.406V15.406Z"
+            fill="black" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M40 50.0098C38.6854 50.0098 37.3838 49.7509 36.1693 49.2478C34.9548 48.7448 33.8513 48.0074 32.9218 47.0779C31.9923 46.1484 31.255 45.0449 30.7519 43.8304C30.2489 42.616 29.99 41.3143 29.99 39.9998C29.99 38.6853 30.2489 37.3836 30.7519 36.1691C31.255 34.9547 31.9923 33.8512 32.9218 32.9216C33.8513 31.9921 34.9548 31.2548 36.1693 30.7518C37.3838 30.2487 38.6854 29.9898 40 29.9898C42.6548 29.9898 45.2009 31.0444 47.0781 32.9216C48.9553 34.7989 50.0099 37.345 50.0099 39.9998C50.0099 42.6546 48.9553 45.2007 47.0781 47.0779C45.2009 48.9552 42.6548 50.0098 40 50.0098V50.0098ZM40 24.5798C35.9103 24.5798 31.9882 26.2044 29.0964 29.0962C26.2046 31.988 24.58 35.9101 24.58 39.9998C24.58 44.0894 26.2046 48.0116 29.0964 50.9034C31.9882 53.7952 35.9103 55.4198 40 55.4198C44.0896 55.4198 48.0117 53.7952 50.9035 50.9034C53.7953 48.0116 55.4199 44.0894 55.4199 39.9998C55.4199 35.9101 53.7953 31.988 50.9035 29.0962C48.0117 26.2044 44.0896 24.5798 40 24.5798V24.5798ZM59.9059 24.2998C59.9059 25.2665 59.5219 26.1936 58.8384 26.8772C58.1548 27.5608 57.2277 27.9448 56.261 27.9448C55.2942 27.9448 54.3671 27.5608 53.6835 26.8772C53 26.1936 52.616 25.2665 52.616 24.2998C52.616 23.3331 53 22.406 53.6835 21.7224C54.3671 21.0388 55.2942 20.6548 56.261 20.6548C57.2277 20.6548 58.1548 21.0388 58.8384 21.7224C59.5219 22.406 59.9059 23.3331 59.9059 24.2998"
+            fill="black" />
+        </svg>
+      </a>
+      <!-- LinkedIn -->
+      <a title="Connect with me on LinkedIn." aria-label="Connect with me on LinkedIn." href="#" target="_blank"
+        class="social_item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <path
+            d="M70 14.4118V65.5882C70 66.7583 69.5352 67.8805 68.7078 68.7078C67.8805 69.5352 66.7583 70 65.5882 70H14.4118C13.2417 70 12.1195 69.5352 11.2922 68.7078C10.4648 67.8805 10 66.7583 10 65.5882V14.4118C10 13.2417 10.4648 12.1195 11.2922 11.2922C12.1195 10.4648 13.2417 10 14.4118 10H65.5882C66.7583 10 67.8805 10.4648 68.7078 11.2922C69.5352 12.1195 70 13.2417 70 14.4118ZM27.6471 32.9412H18.8235V61.1765H27.6471V32.9412ZM28.4412 23.2353C28.4458 22.5679 28.319 21.9061 28.0678 21.2877C27.8167 20.6693 27.4462 20.1064 26.9776 19.6312C26.5089 19.1559 25.9512 18.7777 25.3364 18.518C24.7215 18.2583 24.0615 18.1223 23.3941 18.1176H23.2353C21.878 18.1176 20.5763 18.6568 19.6166 19.6166C18.6568 20.5763 18.1176 21.878 18.1176 23.2353C18.1176 24.5926 18.6568 25.8943 19.6166 26.854C20.5763 27.8138 21.878 28.3529 23.2353 28.3529C23.9028 28.3694 24.5669 28.2541 25.1899 28.0138C25.8128 27.7734 26.3822 27.4127 26.8657 26.9522C27.3491 26.4916 27.7371 25.9404 28.0074 25.3299C28.2778 24.7194 28.4251 24.0616 28.4412 23.3941V23.2353ZM61.1765 44.0235C61.1765 35.5353 55.7765 32.2353 50.4118 32.2353C48.6553 32.1473 46.9064 32.5215 45.3396 33.3203C43.7728 34.1192 42.4428 35.3149 41.4824 36.7882H41.2353V32.9412H32.9412V61.1765H41.7647V46.1588C41.6372 44.6208 42.1216 43.0945 43.1129 41.9116C44.1042 40.7287 45.5222 39.9847 47.0588 39.8412H47.3941C50.2 39.8412 52.2824 41.6059 52.2824 46.0529V61.1765H61.1059L61.1765 44.0235Z"
+            fill="black" />
+        </svg>
+      </a>
+    </div>
+  </section>
+  <!-- End Contact (Section) -->
+
+  <!-- JS -->
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>Splitting()</script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
